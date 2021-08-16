@@ -11,9 +11,13 @@ export * from "./middlewares/require-auth";
 export * from "./middlewares/validate-requests";
 
 export * from "./events/subjects";
-export * from "./events/profile-created-event";
 export * from "./events/base-publisher";
 export * from "./events/base-listener";
+
+export * from "./events/interfaces/profile-created-event";
+export * from "./events/interfaces/user-created-event";
+export * from "./events/interfaces/user-deleted-event";
+export * from "./events/interfaces/user-updated-event";
 
 // interface Color {
 //   red: Number;
