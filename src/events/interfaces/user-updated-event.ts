@@ -4,6 +4,7 @@ export interface UserUpdatedEvent {
 	subject: Subjects.UserUpdated;
 	data: {
 		email: string;
-		userId: string;
+		username: string;
+		id: string;
 	};
 }
