@@ -3,7 +3,8 @@ import { Subjects } from '../subjects';
 export interface UserCreatedEvent {
   subject: Subjects.UserCreated;
   data: {
-    userId: string;
+    id: string;
     email: string;
+    username: string;
   };
 }
