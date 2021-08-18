@@ -3,6 +3,7 @@ import { Subjects } from '../subjects';
 export interface ProfileCreatedEvent {
   subject: Subjects.ProfileCreated;
   data: {
+    version: number;
     email: string;
     firstName: string;
     lastName: string;
