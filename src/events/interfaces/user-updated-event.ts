@@ -1,10 +1,10 @@
-import {Subjects} from "../subjects";
+import { Subjects } from '../subjects';
 
 export interface UserUpdatedEvent {
-	subject: Subjects.UserUpdated;
-	data: {
-		email: string;
-		username: string;
-		id: string;
-	};
+  subject: Subjects.UserUpdated;
+  data: {
+    email: string;
+    username: string;
+    id: string;
+  };
 }

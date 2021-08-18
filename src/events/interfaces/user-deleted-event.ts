@@ -1,8 +1,8 @@
-import {Subjects} from "../subjects";
+import { Subjects } from '../subjects';
 
 export interface UserDeletedEvent {
-	subject: Subjects.UserDeleted;
-	data: {
-		userId: string;
-	};
+  subject: Subjects.UserDeleted;
+  data: {
+    userId: string;
+  };
 }
