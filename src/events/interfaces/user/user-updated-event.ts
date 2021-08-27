@@ -1,12 +1,12 @@
-import { Subjects } from '../subjects';
+import { Subjects } from '../../subjects';
 
 export interface UserUpdatedEvent {
   subject: Subjects.UserUpdated;
   data: {
+    id: string;
     email: string;
     firstname: string;
     lastname: string;
-    id: string;
     version: number;
   };
 }

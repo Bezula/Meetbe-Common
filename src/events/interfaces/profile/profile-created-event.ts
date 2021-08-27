@@ -1,12 +1,10 @@
-import { Subjects } from '../subjects';
-
+import { Subjects } from '../../subjects';
+import { UserDoc } from '../../../models/user/UserDoc';
 export interface ProfileCreatedEvent {
   subject: Subjects.ProfileCreated;
   data: {
-    version: number;
-    email: string;
-    firstName: string;
-    lastName: string;
+    id: string;
+    user: UserDoc;
     age: string;
     birthDate: string;
     message: string;
@@ -20,6 +18,6 @@ export interface ProfileCreatedEvent {
     currentJob: string;
     socialStatus: string;
     phoneNumber: string;
-    userId: string;
+    version: number;
   };
 }
