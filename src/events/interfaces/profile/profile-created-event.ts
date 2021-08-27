@@ -1,10 +1,9 @@
 import { Subjects } from '../../subjects';
-import { UserDoc } from '../../../models/user/UserDoc';
 export interface ProfileCreatedEvent {
   subject: Subjects.ProfileCreated;
   data: {
     id: string;
-    user: UserDoc;
+    user: any;
     age: string;
     birthDate: string;
     message: string;
