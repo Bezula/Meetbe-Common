@@ -2,7 +2,7 @@ import { Subjects } from '../../subjects';
 export interface ProfileCreatedEvent {
   subject: Subjects.ProfileCreated;
   data: {
-    id: string;
+    _id: string;
     user: any;
     age: string;
     birthDate: string;
